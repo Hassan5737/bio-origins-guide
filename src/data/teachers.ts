@@ -87,7 +87,7 @@ export const teachers: Teacher[] = [
   },
   {
     id: "7",
-    name: "Mrs. Menna Allah Elsayed Mohamed",
+    name: "Mrs. Amira Hassan Ahmed",
     title: "Biochemistry Department Head",
     bio: "Amira Hassan Ahmed holds a strong academic foundation in biology from Zagazig University and has developed valuable teaching experience in STEM-based educational environments. She is dedicated to presenting biological concepts in a simple, exciting way that motivates students to explore and think deeply. Through an engaging and interactive teaching approach, she helps learners build both understanding and a lasting appreciation for science.",
     subjects: ["Biochemistry", "Enzymology", "Metabolism"],
