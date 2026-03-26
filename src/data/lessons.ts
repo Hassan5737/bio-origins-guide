@@ -349,7 +349,7 @@ export const lessons: Lesson[] = [
   },
   {
     id: "plant-anatomy-4",
-    title: "Complete Permenant tissues",
+    title: "Complex Permenant tissues",
     week: 4,
     chapterId: "plant-anatomy",
     objectives: [
