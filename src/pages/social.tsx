@@ -32,20 +32,21 @@ const videos = [
 ];
 
 function getEmbedUrl(url: string): string {
+  const params = "?rel=0&modestbranding=1";
   // Handle YouTube Shorts
   const shortsMatch = url.match(/youtube\.com\/shorts\/([a-zA-Z0-9_-]+)/);
   if (shortsMatch) {
-    return `https://www.youtube.com/embed/${shortsMatch[1]}`;
+    return `https://www.youtube.com/embed/${shortsMatch[1]}${params}`;
   }
   // Handle youtu.be short links
   const shortLinkMatch = url.match(/youtu\.be\/([a-zA-Z0-9_-]+)/);
   if (shortLinkMatch) {
-    return `https://www.youtube.com/embed/${shortLinkMatch[1]}`;
+    return `https://www.youtube.com/embed/${shortLinkMatch[1]}${params}`;
   }
   // Handle standard youtube.com/watch?v=
   const watchMatch = url.match(/[?&]v=([a-zA-Z0-9_-]+)/);
   if (watchMatch) {
-    return `https://www.youtube.com/embed/${watchMatch[1]}`;
+    return `https://www.youtube.com/embed/${watchMatch[1]}${params}`;
   }
   return url;
 }
@@ -85,27 +86,31 @@ const Social = () => {
                   </h2>
 
                   {/* Video Embed */}
-                  <div
-                    className={`w-full overflow-hidden rounded-xl border border-border card-shadow ${
-                      isShort
-                        ? "mx-auto max-w-sm"
-                        : "max-w-3xl"
-                    }`}
-                  >
-                    <div
-                      className={`relative w-full ${
-                        isShort ? "pb-[177.78%]" : "pb-[56.25%]"
-                      }`}
-                    >
-                      <iframe
-                        src={embedUrl}
-                        title={video.title}
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowFullScreen
-                        className="absolute inset-0 h-full w-full"
-                      />
+                  {isShort ? (
+                    <div className="mx-auto w-full max-w-xs overflow-hidden rounded-xl border border-border card-shadow">
+                      <div className="relative w-full pb-[177.78%]">
+                        <iframe
+                          src={embedUrl}
+                          title={video.title}
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                          allowFullScreen
+                          className="absolute inset-0 h-full w-full"
+                        />
+                      </div>
                     </div>
-                  </div>
+                  ) : (
+                    <div className="w-full max-w-4xl overflow-hidden rounded-xl border border-border card-shadow">
+                      <div className="relative w-full pb-[56.25%]">
+                        <iframe
+                          src={embedUrl}
+                          title={video.title}
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                          allowFullScreen
+                          className="absolute inset-0 h-full w-full"
+                        />
+                      </div>
+                    </div>
+                  )}
 
                   {/* Divider — not after last item */}
                   {index < videos.length - 1 && (
