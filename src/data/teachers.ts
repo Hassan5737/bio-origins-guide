@@ -21,7 +21,7 @@ export interface Teacher {
 export const teachers: Teacher[] = [
   {
     id: "1",
-    name: "Mr. Hassan",
+    name: "Mr. Hassan Ahmed Hassan",
     title: "Professor of Plant Biology",
     bio: "With a strong background in biology, Hassan, born in 2004, studied at Zagazig University and has experience teaching in STEM-focused schools. He specializes in making complex biological concepts accessible and engaging, creating lessons that spark curiosity and critical thinking. His interactive approach ensures students not only understand the material but also develop a genuine passion for science.",
     subjects: ["Plant Biology", "Cell Biology", "Botany"],
