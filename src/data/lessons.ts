@@ -3,6 +3,9 @@ import lesson3Image from "@/assets/lesson3.jpeg";
 import lesson3Image2 from "@/assets/lesson3-Collenchyma.jpeg";
 import lesson3Image3 from "@/assets/lesson3-img3.jpeg";
 import lesson3Image4 from "@/assets/lesson3-img4.jpeg";
+import lesson6Image1 from "@/assets/lesson6-img1.jpeg";
+import lesson6Image2 from "@/assets/lesson6-img2.jpeg";
+import lesson6Image3 from "@/assets/lesson6-img3.jpeg";
 
 export interface Lesson {
   id: string;
@@ -23,14 +26,12 @@ export interface Lesson {
 export interface Chapter {
   id: string;
   title: string;
-
 }
 
 export const chapters: Chapter[] = [
   {
     id: "plant-anatomy",
     title: "Plant Anatomy and Physiology",
-
   },
 ];
 
@@ -202,7 +203,7 @@ export const lessons: Lesson[] = [
 
       There are two main types:
         •	Fibers: long, narrow cells that provide tensile strength
-        •	Sclereids: short, irregular cells called “stone cells”
+        •	Sclereids: short, irregular cells called "stone cells"
 
       **Location**
 
@@ -338,14 +339,14 @@ export const lessons: Lesson[] = [
       **Part D: Short Answer / Application**
       
       9. A coconut husk is hard and protects the seed. Which tissue is responsible? Why?
-      10. A leaf’s palisade layer is tightly packed with chloroplasts. Which tissue is this, and what is its main function?
+      10. A leaf's palisade layer is tightly packed with chloroplasts. Which tissue is this, and what is its main function?
       11. A young plant stem bends easily in wind without breaking. Which tissue allows this flexibility?
     `,
     activities: [
       "Stomata peeling and microscopy",
       "Measure the effect of light intensity on stomatal opening",
     ],
-    video:"https://www.youtube.com/embed/qBjpfhzMoMA?si=cxcWZO_J9RsdIGDD"
+    video: "https://www.youtube.com/embed/qBjpfhzMoMA?si=cxcWZO_J9RsdIGDD",
   },
   {
     id: "plant-anatomy-4",
@@ -417,31 +418,110 @@ export const lessons: Lesson[] = [
     week: 6,
     chapterId: "plant-anatomy",
     objectives: [
-      "State the three principles of cell theory",
-      "Compare prokaryotic and eukaryotic cells",
-      "Identify organelles and their functions",
+      "Explain the concept of capillary action in plants",
+      "Describe the role of adhesion and cohesion in water transport",
+      "Understand how transpiration creates a pulling force in xylem",
+      "Apply the Cohesion-Tension Theory to explain water movement in tall trees",
     ],
     keyConcepts: [
-      "Cell theory history and principles",
-      "Prokaryotes vs Eukaryotes",
-      "Plant vs Animal cells",
-      "Organelle functions",
+      "Capillary Action: Water climbing through narrow xylem tubes",
+      "Adhesion: Water molecules sticking to xylem walls",
+      "Cohesion: Water molecules sticking to each other",
+      "Transpiration Stream: The combined upward flow of water",
     ],
     essentialQuestions: [
-      "Why is the cell called the basic unit of life?",
-      "How do organelles work together as a system?",
+      "How do adhesion and cohesion forces enable water to move upward against gravity in plants?",
     ],
     content: `
-      All living organisms are composed of cells, the fundamental units of life.
-      
-      **Cell Theory**
-      1. All living things are made of cells
-      2. Cells are the basic units of structure and function
-      3. All cells come from pre-existing cells
+      **Transpiration and Capillary Action**
+
+      Water must travel from the roots all the way to the leaves of a plant — sometimes over 100 meters in tall trees. This happens without any mechanical pump. How? Through the combined forces of capillary action and transpiration.
+
+      **1. Capillary Action: The "Climbing" Power**
+
+      ![Capillary Action and Transpiration Pull](${lesson6Image1})
+
+      Capillary Action is the ability of a liquid to flow in narrow spaces without the assistance of, or even in opposition to, external forces like gravity.
+
+      In plants, this happens due to two primary forces:
+        • Adhesion: Water molecules "stick" to the walls of the plant's xylem (tubes).
+        • Cohesion: Water molecules "stick" to each other because of hydrogen bonding.
+
+      **2. Transpiration: The "Pulling" Power**
+
+      ![How Plants Transport Water](${lesson6Image2})
+
+      Transpiration is the evaporation of water from the internal surfaces of leaves through tiny pores called Stomata.
+
+      Think of it like a person drinking through a straw:
+        • As water evaporates from the leaf, it creates negative pressure (a vacuum).
+        • This "pulls" the entire column of water up from the roots to replace what was lost.
+
+      **3. The Transpiration Stream**
+
+      ![Water Potential Gradient](${lesson6Image3})
+
+      When you combine Cohesion, Adhesion, and Transpiration, you get the Cohesion-Tension Theory. This is how a 100-meter tall redwood tree gets water to its highest leaves without a mechanical pump!
+
+      The water potential gradient drives everything:
+        • High water potential at the roots (where water enters from soil)
+        • Low water potential at the leaves (where water evaporates)
+        • Water always moves from high to low water potential — from roots to leaves
+    `,
+    activitiesContent: `
+      **Activity 1: The Rainbow Flower**
+
+      **Materials:**
+      • White carnations (or celery stalks)
+      • Glass jars
+      • Water
+      • Different liquid food colors
+
+      **Procedure:**
+      Put different colors in each jar and place a flower in each.
+
+      **What happens:**
+      Over 24 hours, the petals will change color.
+
+      **Why:**
+      Capillary Action moves the colored water up through the xylem.
+
+      **Activity 2: The "Leaf in a Bag"**
+
+      **Materials:**
+      • A clear plastic bag
+      • A rubber band
+
+      **Procedure:**
+      Wrap the bag around a leafy branch of a living plant outside and tie it tight.
+
+      **What happens:**
+      Fog and water droplets will appear inside the bag.
+
+      **Why:**
+      This captures Transpiration in action as the plant "breathes" out water vapor.
+    `,
+    quizzes: `
+      **Quick Quiz — Transpiration and Capillary Action**
+
+      1. Which force describes water molecules sticking to the plant's cell walls?
+      a) Cohesion
+      b) Adhesion
+      c) Gravity
+
+      2. Through which structures does water vapor exit the leaf?
+      a) Roots
+      b) Xylem
+      c) Stomata
+
+      3. Transpiration rate increases when the weather is:
+      a) Humid and rainy
+      b) Cold and dark
+      c) Hot, dry, and windy
     `,
     activities: [
-      "Compare onion and cheek cells under microscopy",
-      "Create 3D cell models",
+      "Rainbow Flower: observe capillary action with colored water and white carnations",
+      "Leaf in a Bag: capture transpiration from a living plant branch",
     ],
   },
 ];
