@@ -421,83 +421,12 @@ Which tissue produces this outer layer? What is its function beyond just coverin
       **Question:**
       Which tissue is likely not functioning properly? Why?
     `,
-    quizzes: `
-      **Plant Permanent Tissues Quiz**
-
-      **Part A: Choose the correct answer**
-      
-      1. Which tissue is made of dead cells with thick lignified walls?
-      a) Parenchyma
-      b) Collenchyma
-      c) Sclerenchyma
-      d) Chlorenchyma
-
-      2. Which tissue mainly performs photosynthesis?
-      a) Parenchyma
-      b) Chlorenchyma
-      c) Sclerenchyma
-      d) Collenchyma
-
-      3. Uneven thickening at the corners of cells is a feature of:
-      a) Parenchyma
-      b) Collenchyma
-      c) Chlorenchyma
-      d) Sclerenchyma
-
-      4. Which tissue is most involved in storage of food?
-      a) Parenchyma
-      b) Collenchyma
-      c) Sclerenchyma
-      d) Chlorenchyma
-
-      5. Which tissue gives flexible support to young plant parts?
-      a) Sclerenchyma
-      b) Parenchyma
-      c) Collenchyma
-      d) Chlorenchyma
-
-      **Part B: True or False**
-      
-      6. Sclerenchyma cells are living at maturity. ( )
-      7. Chlorenchyma contains chloroplasts. ( )
-      8. Parenchyma cells have thick lignified walls. ( )
-      9. Collenchyma helps plants bend without breaking. ( )
-      10. Aerenchyma is a type of sclerenchyma. ( )
-
-      **Quiz 2 – Plant Permanent Tissues**
-      
-      **Part A: Multiple Choice (MCQ)**
-      
-      1. Which tissue has dead cells with extremely thick lignified walls?
-      a) Parenchyma
-      b) Sclerenchyma
-      c) Collenchyma
-      d) Chlorenchyma
-
-      2. Which tissue helps young stems bend without breaking?
-      a) Sclerenchyma
-      b) Collenchyma
-      c) Chlorenchyma
-      d) Parenchyma
-
-      **Part B: True or False**
-      
-      3. Parenchyma cells are living and can perform photosynthesis if chloroplasts are present. ( )
-      4. Sclerenchyma cells are alive at maturity. ( )
-      5. Chlorenchyma is found mainly in roots. ( )
-
-      **Part C: Fill in the Blanks**
-      
-      6. Collenchyma cells are thickened at the __________ of the cell.
-      7. Parenchyma cells may store __________, water, and other nutrients.
-      8. Chlorenchyma cells contain __________ for photosynthesis.
-
-      **Part D: Short Answer / Application**
-      
-      9. A coconut husk is hard and protects the seed. Which tissue is responsible? Why?
-      10. A leaf's palisade layer is tightly packed with chloroplasts. Which tissue is this, and what is its main function?
-      11. A young plant stem bends easily in wind without breaking. Which tissue allows this flexibility?
-    `,
+    quizLinks: [
+      {
+        label: "Plant Permanent Tissues – Quiz",
+        url: "https://symphonious-praline-5814ef.netlify.app",
+      },
+    ],
     activities: [
       "Stomata peeling and microscopy",
       "Measure the effect of light intensity on stomatal opening",
