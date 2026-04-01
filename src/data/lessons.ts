@@ -7,6 +7,17 @@ import lesson6Image1 from "@/assets/lesson6-img1.jpeg";
 import lesson6Image2 from "@/assets/lesson6-img2.jpeg";
 import lesson6Image3 from "@/assets/lesson6-img3.jpeg";
 
+export interface QuizLink {
+  label: string;
+  url: string;
+}
+
+export interface VideoSection {
+  title: string;
+  url: string;
+  content: string;
+}
+
 export interface Lesson {
   id: string;
   title: string;
@@ -19,8 +30,10 @@ export interface Lesson {
   activities: string[];
   image?: string;
   video?: string;
+  videoSections?: VideoSection[];
   activitiesContent?: string;
   quizzes?: string;
+  quizLinks?: QuizLink[];
 }
 
 export interface Chapter {
@@ -38,46 +51,123 @@ export const chapters: Chapter[] = [
 export const lessons: Lesson[] = [
   {
     id: "plant-anatomy-1",
-    title: "Plant Tissues : meristematic and permanent ",
+    title: "Plant Tissues : meristematic and permanent",
     week: 1,
     chapterId: "plant-anatomy",
     objectives: [
-      "Identify the three main types of plant tissues",
-      "Describe the structure and function of meristematic tissue",
-      "Explain the role of dermal, vascular, and ground tissue systems",
-      "Analyze cross-sections of plant stems and roots",
+      "Define meristematic and permanent tissues",
+      "Describe the structural differences between meristematic and permanent cells",
+      "Explain the functional roles of each tissue type",
+      "Compare and contrast meristematic and permanent tissues",
     ],
     keyConcepts: [
-      "Meristematic Tissue: Regions of active cell division",
-      "Dermal Tissue: Outer protective layer (epidermis)",
-      "Vascular Tissue: Xylem and phloem for transport",
-      "Ground Tissue: Parenchyma, collenchyma, sclerenchyma",
+      "Meristematic tissues are undifferentiated and capable of continuous division.",
+      "Permanent tissues are differentiated and specialized, with no ability to divide.",
+      "Meristematic cells: small, thin-walled, large nucleus, little to no vacuoles.",
+      "Permanent cells: larger, thick-walled, with large vacuoles for specific functions.",
     ],
     essentialQuestions: [
-      "How do different plant tissues work together to support plant life?",
-      "What would happen if a plant lost its vascular tissue?",
-      "How does the structure of each tissue relate to its function?",
+      "How do structural and functional differences between meristematic and permanent tissues support plant growth and survival?",
     ],
-    content: `
-      Plant tissues are organized into three main tissue systems: dermal, vascular, and ground tissue.
-      
-      **Dermal Tissue System**
-      The epidermis covers the exterior of the plant body, protecting it from desiccation, pathogens, and physical damage.
-      
-      ![Lesson 3 Image](${lesson3Image})
+    videoSections: [
+      {
+        title: "Plant Tissues: Meristematic and Permanent",
+        url: "https://youtube.com/shorts/ucEItX85CSo?feature=share",
+        content: `
+**Plant Tissues: Meristematic and Permanent**
 
-      **Vascular Tissue System**
-      Consists of xylem (water transport) and phloem (sugar transport), forming a continuous network throughout the plant.
-      
-      **Ground Tissue System**
-      Makes up the bulk of the plant body and performs various functions including photosynthesis, storage, and support.
-    `,
-    activities: [
-      "Microscope lab: Examine cross-sections of monocot and dicot stems",
-      "Create labeled diagrams of plant tissue systems",
-      "Compare and contrast the three types of ground tissue",
+Plants are made up of different types of tissues, each with a specific role in growth and survival. The two main categories are meristematic tissues and permanent tissues.
+
+**Meristematic Tissues**
+
+Meristematic tissues are undifferentiated tissues whose cells are capable of continuous mitotic division. Their main function is growth and the production of new cells. These tissues are found at the growing tips of roots and shoots (apical meristems), at nodes in some plants (intercalary meristems), and along the sides of stems for increase in thickness (lateral meristems).
+
+Meristematic cells are small and compactly arranged with thin cell walls. They have a large, prominent nucleus and very little or no vacuole, which reflects their high metabolic activity. Because they have not yet specialized, they retain the ability to divide and give rise to all other tissues in the plant.
+
+**Permanent Tissues**
+
+Permanent tissues are differentiated tissues whose cells have lost the ability to divide and have become specialized to perform specific functions. They develop from meristematic tissues once the cells stop dividing and mature into their final form.
+
+Permanent tissues can be simple (made of one cell type, such as parenchyma, collenchyma, and sclerenchyma) or complex (made of more than one cell type, such as xylem and phloem). Each type performs a fixed role — transport, support, protection, or food storage.
+        `,
+      },
+      {
+        title: "The Difference Between Meristematic and Permanent Tissues",
+        url: "https://youtube.com/shorts/Mo3bhnz5whI?feature=share",
+        content: `
+**The Difference Between Meristematic and Permanent Tissues**
+
+**1. Ability to Divide**
+
+Meristematic tissues: cells divide continuously by mitosis, producing new cells that fuel plant growth.
+
+Permanent tissues: cells do not divide. Once they mature, they remain in their specialized form for the rest of their life.
+
+**2. Specialization**
+
+Meristematic: cells are unspecialized. They are totipotent, meaning they have the potential to become any cell type.
+
+Permanent: cells are specialized for specific functions such as transport (xylem and phloem), protection (epidermis), mechanical support (sclerenchyma), or food storage (parenchyma).
+
+**3. Cell Structure**
+
+Meristematic: small cells with thin walls, a large nucleus relative to cell size, and very small or no vacuoles. Dense cytoplasm reflects active metabolism.
+
+Permanent: larger cells with thicker walls and large central vacuoles. Some cells (like sclerenchyma) are dead at maturity, their walls strengthened with lignin.
+
+**4. Function**
+
+Meristematic: responsible for growth in length (apical meristems) and thickness (lateral meristems like the vascular cambium and cork cambium).
+
+Permanent: perform fixed functions like conduction (xylem and phloem), protection (epidermis), photosynthesis (chlorenchyma), and structural support (collenchyma and sclerenchyma).
+        `,
+      },
     ],
-    image: plantAnatomyImage,
+    content: "",
+    activitiesContent: `
+**Activity 1: Tissue Detective**
+
+**Objective:**
+Identify whether a plant part relies mainly on meristematic or permanent tissue.
+
+**Task:**
+Look at the following plant parts and for each one, decide:
+• Is it a region of active growth or a mature, specialized structure?
+• Which type of tissue dominates — meristematic or permanent?
+
+Plant parts to examine:
+• Root tip
+• Mature leaf
+• Young shoot tip
+• Woody stem
+• Flower petal
+
+**Students answer:**
+• Which parts are dominated by meristematic tissue? Why?
+• Which parts are made mostly of permanent tissue? Why?
+• What would happen to a plant if its apical meristems were damaged?
+
+**Activity 2: Think and Apply**
+
+A gardener notices that after trimming the tips of a plant, new branches start growing from the sides. 
+
+**Question:**
+Which type of tissue is responsible for this new growth, and where exactly is it located in the stem?
+    `,
+    quizLinks: [
+      {
+        label: "Quiz 1 — Plant Tissues",
+        url: "https://quizzory.in/id/69c438e73bce17d35eb057cd",
+      },
+      {
+        label: "Quiz 2 — Meristematic vs Permanent",
+        url: "https://quizzory.in/id/69c51ec9e7af599f6e9fb708",
+      },
+    ],
+    activities: [
+      "Tissue Detective: classify plant parts as meristematic or permanent",
+      "Think and Apply: explain lateral bud growth after tip trimming",
+    ],
   },
   {
     id: "plant-anatomy-2",
