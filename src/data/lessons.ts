@@ -175,33 +175,99 @@ Which type of tissue is responsible for this new growth, and where exactly is it
     week: 2,
     chapterId: "plant-anatomy",
     objectives: [
-      "Describe the structure of xylem and phloem",
-      "Explain the mechanism of water transport in xylem",
-      "Understand phloem loading and translocation",
-      "Compare vascular bundles in monocots and dicots",
+      "Define meristematic tissues and describe their key characteristics",
+      "Identify the three types of meristematic tissues by position",
+      "Explain the role of apical meristem in primary growth",
+      "Describe how vascular cambium and cork cambium contribute to secondary growth",
     ],
     keyConcepts: [
-      "Xylem: Tracheids and vessel elements",
-      "Phloem: Sieve tube elements and companion cells",
-      "Transpiration-cohesion-tension theory",
-      "Pressure flow hypothesis for phloem transport",
+      "Meristematic tissues: cells divide continuously, driving plant growth.",
+      "Apical meristem: at root and stem tips, causes primary growth.",
+      "Vascular cambium: between xylem and phloem, adds thickness via secondary growth.",
+      "Cork cambium: outer layer, produces cork for protection.",
     ],
     essentialQuestions: [
-      "How does water move against gravity in tall trees?",
-      "Why is the sugar-water ratio important in phloem?",
+      "How do meristematic tissues enable plants to grow and protect themselves?",
     ],
-    content: `
-      The vascular system is the plant's transportation network.
-      
-      **Xylem Structure and Function**
-      Xylem consists of dead cells that form hollow tubes. Water moves through xylem via the transpiration pull created by evaporation from leaves.
-      
-      **Phloem Structure and Function**
-      Phloem consists of living cells that actively transport sugars from sources (leaves) to sinks (roots, fruits, growing tissues).
+    videoSections: [
+      {
+        title: "Meristematic Tissues",
+        url: "https://youtube.com/shorts/AL0_a8miJQY",
+        content: `
+**Meristematic Tissues**
+
+Meristematic tissues are tissues whose cells are capable of continuous division. They are responsible for plant growth in both length and thickness, making them the engine of plant development throughout the plant's entire life.
+
+**Characteristics of Meristematic Cells**
+
+Meristematic cells share a distinctive set of features that reflect their role as actively dividing cells:
+  • Small cells with thin walls — easy to divide and reorganize
+  • Large nucleus — contains all the genetic instructions needed for division
+  • No vacuoles (or very small ones) — most of the cell is occupied by cytoplasm
+  • Cells divide actively — continuously producing new cells
+
+These features distinguish meristematic tissues from permanent tissues, whose cells are larger, more vacuolated, and no longer dividing.
+
+**Classification by Position**
+
+Meristematic tissues are classified according to their location in the plant into three main types:
+
+**a. Apical Meristem**
+
+Found at the tips of roots and stems, apical meristems are responsible for the increase in length of the plant. This is called primary growth. Through the activity of apical meristems, the plant grows upward toward light and downward into the soil. Every time you see a plant getting taller or its roots penetrating deeper, that is apical meristem at work.
+
+**b. Vascular Cambium**
+
+Located between the xylem and phloem in the vascular bundle, the vascular cambium is responsible for secondary growth — the increase in thickness of the stem and root. It produces secondary xylem (wood) to the inside and secondary phloem to the outside. This is why trees grow wider year after year, forming annual growth rings visible in a cross-section of a trunk.
+
+**c. Cork Cambium (Phellogen)**
+
+Found in the outer region of stems and roots, the cork cambium produces cork cells that form the protective outer layer of the plant. This layer protects the plant from water loss, mechanical injury, and pathogens such as bacteria and fungi. In older woody plants, the cork cambium replaces the epidermis as the main protective covering.
+        `,
+      },
+    ],
+    content: "",
+    activitiesContent: `
+**Activity 1: Growth Zone Mapping**
+
+**Objective:**
+Identify where each type of meristematic tissue would be found on a diagram of a plant.
+
+**Task:**
+Draw or label a simple plant diagram showing:
+• The shoot tip and root tip (Apical meristem)
+• The region between bark and wood in a stem (Vascular cambium)
+• The outer bark layer of a woody stem (Cork cambium)
+
+**Students answer:**
+• Which meristem makes the plant taller?
+• Which meristem makes the trunk wider?
+• Which meristem produces the rough outer bark?
+
+**Activity 2: Think and Apply**
+
+A tree is cut down and its stump is left in the ground. After some time, new shoots start growing from the sides of the stump.
+
+**Question:**
+Which type of meristematic tissue is responsible for this regrowth, and why is it still active even after the main trunk was removed?
+
+**Activity 3: Real-Life Connection**
+
+When you peel an orange, the rough outer skin you remove is produced by a meristematic tissue.
+
+**Question:**
+Which tissue produces this outer layer? What is its function beyond just covering the fruit?
     `,
+    quizLinks: [
+      {
+        label: "Quiz — Meristematic Tissues",
+        url: "https://quizzory.in/id/69c547ece7af599f6ea177e6",
+      },
+    ],
     activities: [
-      "Celery dye experiment to visualize xylem transport",
-      "Calculate transpiration rates under different conditions",
+      "Growth Zone Mapping: label meristem locations on a plant diagram",
+      "Think and Apply: explain stump regrowth using meristem knowledge",
+      "Real-Life Connection: identify which tissue produces orange peel",
     ],
   },
   {
