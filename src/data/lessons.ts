@@ -6,6 +6,12 @@ import lesson3Image4 from "@/assets/lesson3-img4.jpeg";
 import lesson6Image1 from "@/assets/lesson6-img1.jpeg";
 import lesson6Image2 from "@/assets/lesson6-img2.jpeg";
 import lesson6Image3 from "@/assets/lesson6-img3.jpeg";
+import lesson4Image1 from "@/assets/lesson4-img1.jpeg";
+import lesson4Image2 from "@/assets/lesson4-img2.jpeg";
+import lesson4Image3 from "@/assets/lesson4-img3.jpeg";
+import lesson4Image4 from "@/assets/lesson4-img4.jpeg";
+import lesson4Image5 from "@/assets/lesson4-img5.jpeg";
+import lesson4Image6 from "@/assets/lesson4-img6.jpeg";
 
 export interface QuizLink {
   label: string;
@@ -435,33 +441,202 @@ Which tissue produces this outer layer? What is its function beyond just coverin
   },
   {
     id: "plant-anatomy-4",
-    title: "Complex Permenant tissues",
+    title: "Complex Permanent Tissues",
     week: 4,
     chapterId: "plant-anatomy",
     objectives: [
-      "Describe the zones of a root tip",
-      "Explain water and mineral uptake mechanisms",
-      "Compare taproots and fibrous root systems",
+      "Distinguish between simple and complex permanent tissues",
+      "Describe the structure and function of xylem and phloem",
+      "Explain the role of dermal tissues in plant protection",
+      "Identify the three types of ground tissue and their functions",
     ],
     keyConcepts: [
-      "Root cap and zone of cell division",
-      "Zone of elongation and differentiation",
-      "Root hairs and absorption",
-      "Mycorrhizal associations",
+      "Complex Tissues (Xylem & Phloem): multi-cell transport systems",
+      "Vascular Transport System: the plant's circulatory network",
+      "Dermal Protection & Barrier: epidermis, cuticle, stomata, root hairs",
+      "Ground Tissue Matrix: parenchyma, collenchyma, sclerenchyma",
+      "Structural-Functional Adaptation: form follows function in plant tissues",
     ],
     essentialQuestions: [
-      "How do roots obtain water and nutrients from soil?",
-      "Why are root hairs important for plant survival?",
+      "How do the structural differences between Xylem and Phloem reflect their specialized roles in transport?",
     ],
-    content: `
-      Roots anchor plants and absorb water and minerals from the soil.
-      
-      **Root Zones**
-      The root tip contains the root cap for protection, followed by zones of division, elongation, and differentiation.
+    videoSections: [
+      {
+        title: "Complex Permanent Tissues — Overview",
+        url: "https://youtu.be/-La3gJpBmyA?si=gZVNl-lYMErUNDeV",
+        content: `
+**Complex Permanent Tissues**
+
+Unlike simple tissues (parenchyma, collenchyma, sclerenchyma), complex permanent tissues are composed of more than one type of cell that work together as a coordinated unit to perform specialized functions. They are primarily responsible for long-distance transport and structural support throughout the plant body.
+
+![Complex Tissues — Xylem, Cambium, Phloem](${lesson4Image1})
+
+Complex tissues are divided into three major systems:
+  • Vascular tissues (Xylem and Phloem) — for transport
+  • Dermal tissues (Epidermis) — for protection
+  • Ground tissues (Parenchyma, Collenchyma, Sclerenchyma) — for support and metabolism
+
+Each system is indispensable. Remove any one of them and the plant cannot survive. Together, they form a fully integrated living architecture.
+        `,
+      },
+      {
+        title: "Xylem and Phloem — Vascular Transport",
+        url: "https://youtu.be/DhyYtT1K844?si=iwU--tpzbEYqJ0In",
+        content: `
+**a. Vascular Tissues**
+
+Vascular tissues act as the plant's circulatory system, facilitating the bulk flow of fluids and nutrients across the entire plant body — from roots deep in the soil to the highest leaves.
+
+![Xylem and Phloem Diagram](${lesson4Image2})
+
+**Xylem**
+
+Function: Conducts water and dissolved minerals upward from the roots to the leaves. Also provides mechanical support to help the plant stand upright.
+
+Components:
+  • Tracheids — long, tapered dead cells with pits for lateral water movement
+  • Vessels — wider, shorter dead cells stacked end-to-end forming continuous tubes
+  • Xylem Parenchyma — living cells for storage and lateral transport
+  • Xylem Fibers — dead cells for added mechanical strength
+
+Key Feature: The presence of Lignin in the cell walls of tracheids and vessels makes them rigid and waterproof, allowing the plant to grow tall and resist gravitational forces. Because these cells are dead at maturity, they form hollow tubes that water passes through freely.
+
+**Phloem**
+
+Function: Transports dissolved sugars (mainly sucrose) produced by photosynthesis from the leaves (source) to all other parts of the plant (sinks) — including roots, flowers, fruits, and growing shoots.
+
+Components:
+  • Sieve Tube Elements — living cells arranged end-to-end with perforated end walls (sieve plates)
+  • Companion Cells — living cells that support and regulate the metabolic activity of sieve tube elements
+  • Phloem Parenchyma — living cells for storage
+  • Phloem Fibers — for support
+
+Key Feature: Unlike xylem, phloem transport is bidirectional — sugars can flow up or down depending on where they are needed. Phloem cells remain alive at maturity, which is essential for the active loading and unloading of sugars.
+        `,
+      },
+      {
+        title: "Dermal Tissues — The Plant's Protective Barrier",
+        url: "https://youtu.be/UXaISeUv1LU?si=qCEje93o3_3mtBoS",
+        content: `
+**b. Dermal Tissues**
+
+The dermal tissue system is the plant's outer protective covering, acting as a continuous barrier between the internal tissues and the external environment. It is the first line of defense against physical damage, water loss, and pathogen attack.
+
+![Dermal Tissue in Plant Stems](${lesson4Image3})
+
+![Cork Cambium Microscopy](${lesson4Image4})
+
+**Epidermis**
+
+Usually a single layer of tightly packed, flat cells that covers all surfaces of the young plant — roots, stems, and leaves.
+
+Adaptations and Functions:
+
+  • Protection: Guards against mechanical injury, UV radiation, and pathogen entry.
+  • Cuticle: A waxy coating secreted by epidermal cells on aerial surfaces (leaves and stems) that dramatically reduces water loss through evaporation (desiccation). The thicker the cuticle, the more drought-resistant the plant.
+  • Stomata: Specialized pores present mostly on the underside of leaves, each surrounded by two Guard Cells. Guard cells change shape to open or close the stomatal pore, regulating gas exchange (CO₂ in, O₂ out) and controlling the rate of transpiration.
+  • Root Hairs: Extensions of epidermal cells in roots that dramatically increase the surface area available for water and mineral absorption from the soil. A single plant can have millions of root hairs, making absorption highly efficient.
+
+In older woody plants, the epidermis is replaced by a thicker protective layer — the periderm — produced by the cork cambium. This forms the familiar rough bark of trees.
+        `,
+      },
+      {
+        title: "Ground Tissues — The Plant's Matrix",
+        url: "https://youtu.be/NiT8C_Kb-eo?si=wNf9iG7yDsSorh7T",
+        content: `
+**c. Ground Tissues**
+
+Ground tissue makes up the bulk of the plant body. It fills the space between the dermal and vascular tissues and is responsible for the fundamental metabolic functions that keep the plant alive.
+
+![Ground Tissues — Parenchyma, Collenchyma, Sclerenchyma](${lesson4Image5})
+
+![Ground Tissues — Labeled Diagram](${lesson4Image6})
+
+**1. Parenchyma**
+
+Characteristics: Thin-walled, living cells with large central vacuoles and prominent intercellular spaces.
+
+Functions:
+  • Photosynthesis in green leaves (chlorenchyma)
+  • Storage of starch, water, oils, and proteins
+  • Tissue regeneration and wound healing
+  • Gas exchange through intercellular spaces
+
+Parenchyma is the most versatile and widespread ground tissue. Because it retains the ability to divide under certain conditions, it plays a key role in healing and regeneration.
+
+**2. Collenchyma**
+
+Characteristics: Living cells with unevenly thickened primary walls, particularly at the corners. Thickening is due to deposits of cellulose and pectin — not lignin — which keeps the tissue flexible.
+
+Functions:
+  • Provides flexible mechanical support to actively growing parts
+  • Allows young stems and leaf petioles to bend without breaking
+  • Found just below the epidermis in young stems and leaf midribs
+
+**3. Sclerenchyma**
+
+Characteristics: Dead at maturity with extremely thick, lignified secondary walls. No cytoplasm remains in mature cells. Two main forms: fibers (long and narrow) and sclereids (short, irregular "stone cells").
+
+Functions:
+  • Provides rigid mechanical support and protection
+  • Makes plant parts hard and resistant to compression and tension
+  • Found in nut shells, seed coats, the gritty texture of pear fruit, and around vascular bundles
+        `,
+      },
+    ],
+    content: "",
+    activitiesContent: `
+**Activity 1: Tissue Function Matching**
+
+**Objective:**
+Connect each tissue to its real-world role in the plant.
+
+**Task:**
+Match each tissue on the left to the function on the right:
+
+Tissues:
+• Xylem
+• Phloem
+• Epidermis cuticle
+• Stomata
+• Root hairs
+• Parenchyma
+• Collenchyma
+• Sclerenchyma
+
+Functions:
+• Controls gas exchange and water vapor release
+• Transports sugars from leaves to roots
+• Conducts water upward from soil
+• Provides rigid support in nut shells
+• Absorbs water and minerals from soil
+• Prevents water loss in leaves and stems
+• Stores starch and performs photosynthesis
+• Supports young growing stems without breaking them
+
+**Activity 2: Design a Plant Cell**
+
+Imagine you are designing a new plant cell for a specific purpose. Choose ONE of the following roles and describe what your cell would look like:
+• A cell that transports water as fast as possible
+• A cell that stores the maximum amount of sugar
+• A cell that resists being crushed or broken
+
+For each choice, explain: What shape? Thick or thin walls? Living or dead? Why?
+
+**Activity 3: Real-Life Investigation**
+
+Look at these everyday objects and identify which plant tissue is responsible for each property:
+• The hard shell of a walnut
+• The waxy skin of an apple
+• The stringy texture when you break a celery stalk
+• The gritty texture inside a pear
+
+For each one, name the tissue and explain how its structure produces that physical property.
     `,
     activities: [
-      "Germination experiment to observe root development",
-      "Root cross-section microscopy",
+      "Tissue Function Matching: connect each tissue to its real-world role",
+      "Design a Plant Cell: describe a cell optimized for a specific function",
+      "Real-Life Investigation: identify tissues responsible for everyday plant properties",
     ],
   },
   {
