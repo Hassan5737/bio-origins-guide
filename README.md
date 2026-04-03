@@ -1,29 +1,29 @@
-# Bio Origins Guide 🧬
+# Bio Origins Guide 
 
 An interactive educational platform designed to help students learn biology in a structured and engaging way.
 
-## 🚀 Overview
+##  Overview
 
 Bio Origins Guide is a modern web application that provides students with organized biology lessons, multiple instructors, and an intuitive learning experience.
 
 The platform focuses on simplifying complex biological concepts through clean UI and structured content.
 
-## ✨ Features
+##  Features
 
-- 📚 Structured biology lessons
-- 👨‍🏫 Multiple instructors with detailed profiles
-- 🎥 Lesson-based content organization
-- 📱 Responsive and clean user interface
-- ⚡ Fast performance using Vite
+-  Structured biology lessons
+-  Multiple instructors with detailed profiles
+-  Lesson-based content organization
+-  Responsive and clean user interface
+-  Fast performance using Vite
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - React
 - TypeScript
 - Vite
 - Tailwind CSS
 
-## 📂 Project Structure
+##  Project Structure
 
 ```
 src/
@@ -35,9 +35,9 @@ src/
   data/
 ```
 
-## 🧪 Status
+##  Status
 
-🚧 Work in progress — actively being improved.
+ Work in progress — actively being improved.
 
 ## ⚙️ Getting Started
 
@@ -46,6 +46,6 @@ npm install
 npm run dev
 ```
 
-## 👨‍💻 Author
+##  Author
 
 Hassan Ahmed Hassan

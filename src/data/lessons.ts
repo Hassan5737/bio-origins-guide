@@ -638,6 +638,12 @@ For each one, name the tissue and explain how its structure produces that physic
       "Design a Plant Cell: describe a cell optimized for a specific function",
       "Real-Life Investigation: identify tissues responsible for everyday plant properties",
     ],
+    quizLinks: [
+      {
+        label: "Complex Permanent Tissues – Quiz",
+        url: "https://tangerine-melba-b568d3.netlify.app",
+      },
+    ],
   },
   {
     id: "plant-anatomy-5",
