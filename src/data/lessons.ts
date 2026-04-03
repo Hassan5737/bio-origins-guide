@@ -12,6 +12,9 @@ import lesson4Image3 from "@/assets/lesson4-img3.jpeg";
 import lesson4Image4 from "@/assets/lesson4-img4.jpeg";
 import lesson4Image5 from "@/assets/lesson4-img5.jpeg";
 import lesson4Image6 from "@/assets/lesson4-img6.jpeg";
+import lesson5Image1 from "@/assets/lesson5-img1.jpeg";
+import lesson5Image2 from "@/assets/lesson5-img2.jpeg";
+import lesson5Image3 from "@/assets/lesson5-img3.jpeg";
 
 export interface QuizLink {
   label: string;
@@ -647,35 +650,127 @@ For each one, name the tissue and explain how its structure produces that physic
   },
   {
     id: "plant-anatomy-5",
-    title: "Plant Tissues adaptation",
+    title: "Plant Tissues Adaptation",
     week: 5,
     chapterId: "plant-anatomy",
     objectives: [
-      "State the three principles of cell theory",
-      "Compare prokaryotic and eukaryotic cells",
-      "Identify organelles and their functions",
+      "Explain how plant tissues adapt structurally to different environments",
+      "Describe xerophytic adaptations that minimize water loss in dry habitats",
+      "Identify hydrophytic adaptations that enable survival in aquatic environments",
+      "Understand how mechanical stress drives lignification and sclerenchyma development",
     ],
     keyConcepts: [
-      "Cell theory history and principles",
-      "Prokaryotes vs Eukaryotes",
-      "Plant vs Animal cells",
-      "Organelle functions",
+      "Xerophytic Adaptation: thick cuticles, sunken stomata, and water-storage parenchyma for dry environments.",
+      "Hydrophytic Adaptation: aerenchyma with large air spaces for buoyancy and oxygen diffusion in aquatic plants.",
+      "Mechanical Adaptation: increased lignification and sclerenchyma in tissues exposed to wind or physical stress.",
+      "Structure follows function: every tissue modification is a direct response to an environmental challenge.",
     ],
     essentialQuestions: [
-      "Why is the cell called the basic unit of life?",
-      "How do organelles work together as a system?",
+      "How do structural modifications in plant tissues allow plants to survive in extreme environments — from scorching deserts to submerged aquatic habitats?",
     ],
-    content: `
-      All living organisms are composed of cells, the fundamental units of life.
-      
-      **Cell Theory**
-      1. All living things are made of cells
-      2. Cells are the basic units of structure and function
-      3. All cells come from pre-existing cells
+    videoSections: [
+      {
+        title: "Plant Tissue Adaptation",
+        url: "https://youtu.be/A_DF246uVlU?si=mEYxn-AIJReWOhky",
+        content: `
+**Plant Tissue Adaptation**
+
+Plants cannot move to escape harsh conditions — instead, their tissues adapt structurally and chemically to survive in whatever environment they grow in. These modifications are not random; they are precise, functional responses to specific environmental pressures. The same basic tissues — parenchyma, sclerenchyma, epidermis — can take on radically different forms depending on whether the plant lives in a desert, a pond, or a windswept hillside.
+
+**1. Xerophytic Adaptations — Surviving Dry Environments**
+
+![Xerophyte Adaptations — Desert Plants](${lesson5Image1})
+
+Xerophytes are plants adapted to environments where water is scarce — deserts, rocky outcrops, and dry grasslands. Their tissues have evolved multiple strategies to minimize water loss and maximize water storage.
+
+Adaptations include:
+  • Sunken stomata: stomata located in pits below the leaf surface, where humid air is trapped, slowing the rate of water evaporation during transpiration.
+  • Thick cuticles: a heavily waxed epidermal layer that creates a near-impermeable barrier to water loss from leaf and stem surfaces.
+  • Water-storage parenchyma (succulence): enlarged parenchyma cells with large vacuoles that store water, allowing the plant to survive long dry periods. This is what makes a cactus stem or an aloe leaf thick and fleshy.
+  • Spines instead of leaves: modified leaves reduced to spines minimize surface area and therefore minimize transpiration. Photosynthesis is shifted to the green stem.
+  • Tap roots: deep, penetrating root systems that reach underground water sources far below the dry surface.
+
+**2. Hydrophytic Adaptations — Surviving Aquatic Environments**
+
+![Hydrophyte Adaptations — Water Plants](${lesson5Image2})
+
+Hydrophytes are plants that live in or on water. Their main challenge is not water loss but oxygen supply — roots and submerged tissues cannot access atmospheric oxygen directly.
+
+Adaptations include:
+  • Aerenchyma: a specialized form of parenchyma in which the cells are separated by unusually large air spaces. This network of air channels provides two critical functions: buoyancy (keeping the plant or its leaves floating) and internal oxygen diffusion (transporting oxygen from the air above to submerged roots and stems where it is needed for respiration).
+  • Reduced or absent cuticle: since water loss is not a concern, the thick waxy cuticle of land plants is absent or minimal.
+  • Stomata on the upper leaf surface only: in floating leaves, stomata are concentrated on the upper (aerial) surface, where they can access the atmosphere.
+  • Reduced root systems: since the entire plant surface can absorb water and dissolved minerals, the need for extensive root systems is reduced.
+  • Flat, broad leaves: maximize surface area for sunlight absorption and gas exchange at the water surface.
+
+**3. Mechanical Adaptations — Surviving Physical Stress**
+
+![Mechanical Adaptations — Grass Structure](${lesson5Image3})
+
+Plants growing in high-wind environments, exposed clifftops, or areas subject to physical stress develop specific mechanical adaptations to avoid snapping, uprooting, or structural failure.
+
+Adaptations include:
+  • Increased lignification: more lignin is deposited in the cell walls of xylem vessels and sclerenchyma fibers, making stems harder and more resistant to bending forces.
+  • Sclerenchyma development: additional sclerenchyma fibers are laid down in areas of high mechanical stress — particularly around vascular bundles — to resist tensile and compressive forces.
+  • Hollow cylindrical stems (as in grasses): the culm structure of grasses — hollow internodes with solid nodes — distributes bending stress efficiently across the stem wall, allowing flexibility without breakage. This is the same engineering principle used in hollow metal tubes, which are lighter and stronger than solid rods.
+  • Fibrous root systems: in wind-exposed environments, extensive fibrous roots anchor the plant firmly, preventing uprooting during storms.
+  • Low growth habit: keeping meristems close to the ground reduces exposure to mechanical stress during the vegetative stage, protecting the growing points from damage.
+        `,
+      },
+    ],
+    content: "",
+    activitiesContent: `
+**Activity 1: Adaptation Detective**
+
+**Objective:**
+Match each plant feature to the environmental problem it solves.
+
+**Task:**
+For each adaptation below, identify:
+• Which environment it is suited for (dry / aquatic / windy)
+• Which tissue is modified
+• What problem it solves
+
+Adaptations to analyze:
+• Sunken stomata
+• Aerenchyma (large air spaces in stem)
+• Thick lignified sclerenchyma fibers
+• Thick waxy cuticle
+• Hollow grass stem with solid nodes
+• Water-storage parenchyma in cactus
+• Stomata only on upper leaf surface
+• Tap roots reaching deep soil layers
+
+**Activity 2: Design a Survivor Plant**
+
+You are a plant biologist designing a plant for one of the following extreme environments. Choose one and describe the tissue adaptations your plant would have:
+
+• A hot, dry desert with sandstorms
+• A deep freshwater lake with low light
+• A coastal cliff battered by constant strong wind
+
+For each tissue system (dermal, vascular, ground), describe at least one specific adaptation and explain why it helps survival.
+
+**Activity 3: Real-World Comparison**
+
+Look at a cactus and a water lily. They are both flowering plants, yet their tissues look completely different.
+
+Questions:
+• What does the cactus's thick green stem contain, and why?
+• Why does the water lily leaf float without sinking?
+• Which plant has more lignified tissues, and why?
+• If you moved a cactus to a pond and a water lily to a desert, predict what would happen to each — and which tissues would fail first.
     `,
     activities: [
-      "Compare onion and cheek cells under microscopy",
-      "Create 3D cell models",
+      "Adaptation Detective: match plant features to the environmental problems they solve",
+      "Design a Survivor Plant: describe tissue adaptations for an extreme environment",
+      "Real-World Comparison: analyze cactus vs water lily tissue differences",
+    ],
+    quizLinks: [
+      {
+        label: "Plant Tissues Adaptation – Quiz",
+        url: "https://resonant-horse-2a2071.netlify.app",
+      },
     ],
   },
   {
