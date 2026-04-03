@@ -862,24 +862,12 @@ Questions:
       **Why:**
       This captures Transpiration in action as the plant "breathes" out water vapor.
     `,
-    quizzes: `
-      **Quick Quiz — Transpiration and Capillary Action**
-
-      1. Which force describes water molecules sticking to the plant's cell walls?
-      a) Cohesion
-      b) Adhesion
-      c) Gravity
-
-      2. Through which structures does water vapor exit the leaf?
-      a) Roots
-      b) Xylem
-      c) Stomata
-
-      3. Transpiration rate increases when the weather is:
-      a) Humid and rainy
-      b) Cold and dark
-      c) Hot, dry, and windy
-    `,
+    quizLinks: [
+      {
+        label: "Transpiration and Capillary Action – Quiz",
+        url: "https://zingy-marzipan-bd0846.netlify.app",
+      },
+    ],
     activities: [
       "Rainbow Flower: observe capillary action with colored water and white carnations",
       "Leaf in a Bag: capture transpiration from a living plant branch",
