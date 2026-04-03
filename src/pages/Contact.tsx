@@ -105,7 +105,7 @@ const Contact = () => {
                   <div>
                     <h3 className="font-semibold text-foreground">Phone</h3>
                     <a
-                      href="tel:+15551234567"
+                      href="tel:+201205737666"
                       className="text-muted-foreground hover:text-primary transition-colors"
                     >
                       (+20) 1205737666
@@ -122,25 +122,6 @@ const Contact = () => {
                     <p className="text-muted-foreground">
                       Faculty of Education – Zagazig University, <br /> Zagazig, Ash Sharqia, Egypt
                     </p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Office Hours */}
-              <div className="rounded-xl border border-border bg-secondary/30 p-6">
-                <h3 className="mb-4 font-semibold text-foreground">Office Hours</h3>
-                <div className="space-y-2 text-sm text-muted-foreground">
-                  <div className="flex justify-between">
-                    <span>Monday - Friday</span>
-                    <span className="font-medium text-foreground">9:00 AM - 6:00 PM</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span>Saturday</span>
-                    <span className="font-medium text-foreground">10:00 AM - 4:00 PM</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span>Sunday</span>
-                    <span className="font-medium text-foreground">Closed</span>
                   </div>
                 </div>
               </div>
