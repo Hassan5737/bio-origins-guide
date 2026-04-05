@@ -91,6 +91,7 @@ const Index = () => {
                 icon: Award,
                 title: "Track Progress",
                 description: "Monitor your learning journey with chapter-based organization.",
+                link: "/courses",
               },
             ].map((feature, index) => {
               const content = (
@@ -133,9 +134,6 @@ const Index = () => {
           </div>
         </div>
       </section>
-
-      {/* Group Photo Section */}
-
 
       {/* Chapters Preview */}
       <section className="bg-secondary/30 py-20">
@@ -211,7 +209,7 @@ const Index = () => {
                   <img
                     src={teacher.image}
                     alt={teacher.name}
-                    className="h-full w-full object-conatin transition-transform duration-300 group-hover:scale-105"
+                    className="h-full w-full object-contain transition-transform duration-300 group-hover:scale-105"
                   />
                 </div>
                 <div className="p-6">

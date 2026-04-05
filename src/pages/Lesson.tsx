@@ -1,8 +1,24 @@
 import { Link, useParams, Navigate } from "react-router-dom";
-import { ArrowLeft, ArrowRight, Lightbulb, HelpCircle, Beaker, ExternalLink } from "lucide-react";
+import { ArrowLeft, ArrowRight, Lightbulb, HelpCircle, Beaker, ExternalLink, CheckCircle2 } from "lucide-react";
+import { useState, useEffect } from "react";
 import Layout from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { getLessonById, getChapterById, getAdjacentLessons } from "@/data/lessons";
+
+function getCompletedLessons(): Set<string> {
+  try {
+    const stored = localStorage.getItem("bio_completed_lessons");
+    return stored ? new Set(JSON.parse(stored)) : new Set();
+  } catch {
+    return new Set();
+  }
+}
+
+function markLessonComplete(lessonId: string) {
+  const completed = getCompletedLessons();
+  completed.add(lessonId);
+  localStorage.setItem("bio_completed_lessons", JSON.stringify([...completed]));
+}
 
 function getEmbedUrl(url: string): string {
   const params = "?rel=0&modestbranding=1";
@@ -56,6 +72,21 @@ const Lesson = () => {
   const lesson = lessonId ? getLessonById(lessonId) : undefined;
   const chapter = chapterId ? getChapterById(chapterId) : undefined;
   const { prev, next } = lessonId ? getAdjacentLessons(lessonId) : { prev: undefined, next: undefined };
+
+  const [isCompleted, setIsCompleted] = useState(false);
+
+  useEffect(() => {
+    if (lessonId) {
+      setIsCompleted(getCompletedLessons().has(lessonId));
+    }
+  }, [lessonId]);
+
+  const handleMarkComplete = () => {
+    if (lessonId) {
+      markLessonComplete(lessonId);
+      setIsCompleted(true);
+    }
+  };
 
   if (!lesson || !chapter) {
     return <Navigate to="/courses" replace />;
@@ -280,6 +311,25 @@ const Lesson = () => {
                 </div>
               </div>
             </div>
+          </div>
+
+          {/* Mark as Complete */}
+          <div className="mt-10 flex justify-center">
+            {isCompleted ? (
+              <div className="flex items-center gap-2 rounded-xl border border-primary/30 bg-primary/10 px-6 py-4 text-primary">
+                <CheckCircle2 className="h-5 w-5" />
+                <span className="font-semibold">Lesson Completed!</span>
+              </div>
+            ) : (
+              <Button
+                size="lg"
+                onClick={handleMarkComplete}
+                className="gap-2 px-8"
+              >
+                <CheckCircle2 className="h-5 w-5" />
+                Mark as Complete
+              </Button>
+            )}
           </div>
 
           {/* Navigation */}
