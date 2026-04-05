@@ -8,7 +8,7 @@ import Teachers from "./pages/Teachers";
 import Courses from "./pages/Courses";
 import Lesson from "./pages/Lesson";
 import Contact from "./pages/Contact";
-import Social from "./pages/Social";
+import Social from "./pages/social";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
