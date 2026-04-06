@@ -25,14 +25,14 @@ A quick look at the application interface:
 ### Home Page
 
 ![Home Screenshot]
-(c:\Users\cw\OneDrive\سطح المكتب\Screenshot 2026-04-06 164519.png)
+(![alt text](<Screenshot 2026-04-06 164519.png>))
 
 ---
 
 ### Courses Page
 
 ![Courses Screenshot]
-(c:\Users\cw\OneDrive\سطح المكتب\Screenshot 2026-04-06 164540.png)
+(![alt text](<Screenshot 2026-04-06 164540.png>))
 
 ---
 
