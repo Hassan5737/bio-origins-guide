@@ -25,14 +25,14 @@ A quick look at the application interface:
 ### Home Page
 
 ![Home Screenshot]
-(![alt text](<Screenshot 2026-04-06 164519.png>))
+(![alt text](Home_Page.png))
 
 ---
 
 ### Courses Page
 
 ![Courses Screenshot]
-(![alt text](<Screenshot 2026-04-06 164540.png>))
+(![alt text](Courses_Page.png))
 
 ---
 
