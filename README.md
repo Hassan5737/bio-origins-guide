@@ -111,7 +111,3 @@ data/
 Hassan Ahmed Hassan
 
 ---
-
-## Notes
-
-This project represents a practical step toward building production-ready applications, with a focus on clean architecture, debugging, and real-world deployment workflows.
